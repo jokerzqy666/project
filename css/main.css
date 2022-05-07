@@ -1,0 +1,194 @@
+/* 清除默认内外边距 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 清除 ul, ol, li 的默认索引标志 */
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+
+/* 清除 a 标签默认的样式 */
+
+a,
+a:link,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+
+/* 清除 表单元素的 获取焦点外边框 */
+
+input,
+button,
+textarea,
+select {
+    outline: none;
+}
+
+
+/* 准备一个清浮动的类名 */
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* 准备一个版心类名 */
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img {
+    display: block;
+}
+
+.head {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0px 0px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav>p {
+    width: 200px;
+    height: 30px;
+    background-image: url(../images/logo.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.nav>ul {
+    display: flex;
+    height: 60px;
+}
+
+.nav>ul>li {
+    margin-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.nav>ul a {
+    color: #fff;
+}
+
+button {
+    border: none;
+}
+
+.foot {
+    height: 200px;
+    width: 100%;
+    background-color: rgb(26, 26, 26);
+    color: rgb(187, 187, 187);
+    font-size: 14px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerLeft {
+    display: flex;
+}
+
+.fLeft>ul>li {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+    margin-top: 5px;
+}
+
+.fLeft>ul>li>a {
+    color: rgb(187, 187, 187);
+    font-weight: normal;
+}
+
+.fLeft>ul:nth-child(2) {
+    margin-top: 40px;
+}
+
+.fMid>ul {
+    margin: 0px 80px;
+}
+
+.fMid>ul>li {
+    margin-top: 5px;
+}
+
+.fMid>ul>li:nth-child(1),
+.fMid>ul>li:nth-child(5) {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.fRight>ul>li {
+    margin-top: 5px;
+}
+
+.fRight>ul>li:nth-child(1) {
+    font-size: 16px;
+    font-weight: 800;
+    color: white;
+}
+
+.footerRight>h6 {
+    font-size: 16px;
+    color: rgb(189, 16, 33);
+    margin-bottom: 5px;
+}
+
+.last {
+    height: 30px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(240, 24, 36);
+    line-height: 30px;
+    color: rgb(251, 186, 190);
+    font-size: 12px;
+}
+
+.return {
+    color: rgb(187, 187, 187);
+    font-weight: 800;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+
+.return>span {
+    font-size: 30px;
+}

@@ -1,0 +1,381 @@
+body,
+html {
+    background-color: rgb(245, 245, 245);
+}
+
+.head {
+    background-color: white;
+    color: black;
+    padding: 10px 0px 0px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid rgb(224, 224, 224);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav>p {
+    width: 200px;
+    height: 30px;
+    background-image: url(../images/logo1.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.nav>ul {
+    display: flex;
+    height: 60px;
+}
+
+.nav>ul>li {
+    margin-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+}
+
+.nav>ul a {
+    color: black;
+}
+
+.navBox {
+    display: flex;
+    /* background-color: white; */
+}
+
+.chooseList {
+    width: 250px;
+    background-color: rgb(200, 200, 200);
+    color: white;
+    font-size: 14px;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.chooseList>ul>li {
+    padding: 0px 30px;
+    cursor: pointer;
+    line-height: 40px;
+}
+
+.chooseList>ul>li.active {
+    background-color: rgb(255, 103, 0);
+}
+
+.chooseList>ul>li>span {
+    float: right;
+    transform: rotate(-90deg);
+    pointer-events: none;
+}
+
+.chooseList:hover .dlBox {
+    display: block;
+}
+
+.navBox>img {
+    margin: 0px 50px;
+}
+
+.dlBox {
+    position: absolute;
+    height: 470px;
+    right: -700px;
+    top: 0px;
+    width: 700px;
+    z-index: 999;
+    box-sizing: border-box;
+    padding: 0px 25px;
+    background-color: white;
+    box-shadow: 1px 0px 3px #666;
+    display: none;
+}
+
+.dlBox>dl {
+    float: left;
+    background-color: white;
+    color: rgb(51, 51, 51);
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    margin: 20px 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.dlBox>dl.active {
+    border: 1px solid rgb(255, 103, 0);
+    color: rgb(255, 103, 0);
+}
+
+.dlBox>dl>dt {
+    pointer-events: none;
+}
+
+.dlBox>dl>dd {
+    pointer-events: none;
+}
+
+.dlBox>dl>dt>img {
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    pointer-events: none;
+}
+
+.about {
+    width: 750px;
+    height: 470px;
+    /* background-color: white; */
+}
+
+.banner1 {
+    width: 750px;
+    height: 470px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner1>ul {
+    width: 750px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.banner1>ul>li {
+    width: 750px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.banner1>ul>li span {
+    display: block;
+    position: absolute;
+    width: 100px;
+    font-size: 20px;
+    line-height: 40px;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(140, 140, 140, .5);
+    color: white;
+    text-align: center;
+    border-radius: 40px;
+}
+
+.banner1 img {
+    width: 750px;
+    height: 470px;
+}
+
+.banner1>ol {
+    height: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 50px;
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.banner1>ol>li {
+    width: 15px;
+    height: 15px;
+    background-color: #f5f7fa55;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.banner1>ol>li.active {
+    background-color: orange;
+}
+
+.banner1>div>p {
+    color: #3391a175;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+}
+
+.banner1>div>.leftBut {
+    left: 50px;
+}
+
+.banner1>div>.rightBut {
+    right: 0px;
+}
+
+.banner1>div>p>span {
+    font-size: 50px;
+}
+
+.tou {
+    margin-top: 15px;
+    height: 200px;
+    display: flex;
+}
+
+.touLeft {
+    width: 249px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.touLeft>span:nth-child(7) {
+    position: absolute;
+    font-size: 20px;
+    top: 90px;
+    left: 73px;
+    color: black;
+}
+
+.touLeft>span:nth-child(8) {
+    right: 73px;
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    top: 90px;
+}
+
+.touLeft>ul {
+    box-sizing: border-box;
+    width: 83px;
+    height: 100px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.touLeft>ul:hover {
+    color: rgb(255, 103, 0);
+}
+
+.touLeft>ul>li:nth-child(1) {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(207, 204, 202);
+}
+
+.tou>img {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.return {
+    display: none;
+}
+
+.adv>img {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.store {
+    margin-top: 15px;
+    padding-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.store>dl {
+    width: 250px;
+    height: 320px;
+    /* border: 1px solid black; */
+    margin-right: 15px;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.store>dl:hover {
+    box-shadow: 1px 1px 5px #666;
+}
+
+.store>dl>dt>img {
+    margin: auto;
+    width: 160px;
+    height: 160px;
+}
+
+.store>dl>dd:nth-child(3) {
+    color: rgb(176, 176, 183);
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.store>dl>dd:nth-child(4) {
+    color: rgb(255, 103, 0);
+    font-weight: 800;
+}
+
+.store>dl>dd:nth-child(4)>span {
+    color: rgb(176, 176, 183);
+    font-size: 12px;
+}
+
+.store>dl>button {
+    width: 100px;
+    height: 25px;
+    background-color: rgb(255, 103, 0);
+    color: white;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.storeBanner {
+    position: relative;
+}
+
+.pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.pagination>li {
+    font-size: 14px;
+    width: 20px;
+    line-height: 20px;
+    /* border: 1px solid black; */
+    text-align: center;
+    margin-left: 20px;
+    background: white;
+    cursor: pointer;
+}
+
+.pagination>li.active {
+    background-color: rgb(255, 103, 0);
+    color: white;
+}
